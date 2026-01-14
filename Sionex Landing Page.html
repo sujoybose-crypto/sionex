@@ -1,0 +1,705 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta http-equiv="Content-Style-Type" content="text/css">
+  <title></title>
+  <meta name="Generator" content="Cocoa HTML Writer">
+  <meta name="CocoaVersion" content="2685.3">
+  <style type="text/css">
+    p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica}
+    p.p2 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica; min-height: 14.0px}
+  </style>
+</head>
+<body>
+<p class="p1">&lt;!DOCTYPE html&gt;</p>
+<p class="p1">&lt;html class="light" lang="en"&gt;&lt;head&gt;</p>
+<p class="p1">&lt;meta charset="utf-8"/&gt;</p>
+<p class="p1">&lt;meta content="width=device-width, initial-scale=1.0" name="viewport"/&gt;</p>
+<p class="p1">&lt;title&gt;Sionex Home - High Detail Industrial&lt;/title&gt;</p>
+<p class="p1">&lt;link href="https://fonts.googleapis.com" rel="preconnect"/&gt;</p>
+<p class="p1">&lt;link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/&gt;</p>
+<p class="p1">&lt;link href="https://fonts.googleapis.com/css2?family=Lexend:wght@300;400;500;600;700&amp;amp;family=JetBrains+Mono:wght@400;500&amp;amp;display=swap" rel="stylesheet"/&gt;</p>
+<p class="p1">&lt;link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;amp;display=swap" rel="stylesheet"/&gt;</p>
+<p class="p1">&lt;script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"&gt;&lt;/script&gt;</p>
+<p class="p1">&lt;script id="tailwind-config"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>tailwind.config = {</p>
+<p class="p1"><span class="Apple-converted-space">        </span>darkMode: "class",<span class="Apple-converted-space"> </span></p>
+<p class="p1"><span class="Apple-converted-space">        </span>theme: {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>extend: {</p>
+<p class="p1"><span class="Apple-converted-space">                </span>colors: {</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>primary: "#1a3e5b",<span class="Apple-converted-space"> </span></p>
+<p class="p1"><span class="Apple-converted-space">                    </span>"background-light": "#f0f2f5",<span class="Apple-converted-space"> </span></p>
+<p class="p1"><span class="Apple-converted-space">                    </span>"background-dark": "#0f1519",<span class="Apple-converted-space"> </span></p>
+<p class="p1"><span class="Apple-converted-space">                    </span>"industrial-blue": "#1B4C7A",<span class="Apple-converted-space"> </span></p>
+<p class="p1"><span class="Apple-converted-space">                    </span>"misty-taupe": "#605A5A",<span class="Apple-converted-space"> </span></p>
+<p class="p1"><span class="Apple-converted-space">                    </span>"surface-light": "#ffffff",</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>"metallic-start": "#e6eef7",</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>"metallic-end": "#cfdde8"</p>
+<p class="p1"><span class="Apple-converted-space">                </span>},<span class="Apple-converted-space"> </span></p>
+<p class="p1"><span class="Apple-converted-space">                </span>fontFamily: {</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>display: "Lexend",<span class="Apple-converted-space"> </span></p>
+<p class="p1"><span class="Apple-converted-space">                    </span>sans: ["Spline Sans", "sans-serif"],</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>mono: ["JetBrains Mono", "monospace"]</p>
+<p class="p1"><span class="Apple-converted-space">                </span>},<span class="Apple-converted-space"> </span></p>
+<p class="p1"><span class="Apple-converted-space">                </span>backgroundImage: {</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>'grid-light': "linear-gradient(to right, rgba(0,0,0,0.05) 1px, transparent 1px), linear-gradient(to bottom, rgba(0,0,0,0.05) 1px, transparent 1px)",</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>'grid-dark': "linear-gradient(to right, rgba(255,255,255,0.05) 1px, transparent 1px), linear-gradient(to bottom, rgba(255,255,255,0.05) 1px, transparent 1px)",</p>
+<p class="p1"><span class="Apple-converted-space">                </span>}</p>
+<p class="p1"><span class="Apple-converted-space">            </span>}</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>};</p>
+<p class="p1">&lt;/script&gt;</p>
+<p class="p1">&lt;style&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.scrollbar-hide::-webkit-scrollbar {</p>
+<p class="p1"><span class="Apple-converted-space">        </span>display: none;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.scrollbar-hide {</p>
+<p class="p1"><span class="Apple-converted-space">        </span>-ms-overflow-style: none;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>scrollbar-width: none;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>body {</p>
+<p class="p1"><span class="Apple-converted-space">        </span>font-family: "Lexend", sans-serif;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.glass-panel {</p>
+<p class="p1"><span class="Apple-converted-space">        </span>background: rgba(20, 30, 40, 0.6);</p>
+<p class="p1"><span class="Apple-converted-space">        </span>backdrop-filter: blur(12px);</p>
+<p class="p1"><span class="Apple-converted-space">        </span>border: 1px solid rgba(255, 255, 255, 0.1);</p>
+<p class="p1"><span class="Apple-converted-space">        </span>box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.3);</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.metallic-gradient-border {</p>
+<p class="p1"><span class="Apple-converted-space">        </span>position: relative;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>background: #fff;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>background-clip: padding-box;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>border: 1px solid transparent;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>border-radius: 0.5rem;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.metallic-gradient-border::before {</p>
+<p class="p1"><span class="Apple-converted-space">        </span>content: '';</p>
+<p class="p1"><span class="Apple-converted-space">        </span>position: absolute;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>top: 0; right: 0; bottom: 0; left: 0;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>z-index: -1;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>margin: -1px;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>border-radius: inherit;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>background: linear-gradient(135deg, #e6eef7, #cfdde8, #aabbc9);</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.dark .metallic-gradient-border {</p>
+<p class="p1"><span class="Apple-converted-space">        </span>background: #1a190b;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.dark .metallic-gradient-border::before {</p>
+<p class="p1"><span class="Apple-converted-space">        </span>background: linear-gradient(135deg, #3a4b5b, #2a353f);</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.tech-grid-bg {</p>
+<p class="p1"><span class="Apple-converted-space">        </span>background-size: 40px 40px;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>background-image: linear-gradient(to right, rgba(255, 255, 255, 0.05) 1px, transparent 1px),</p>
+<p class="p1"><span class="Apple-converted-space">                          </span>linear-gradient(to bottom, rgba(255, 255, 255, 0.05) 1px, transparent 1px);</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.blueprint-pattern {</p>
+<p class="p1"><span class="Apple-converted-space">        </span>background-color: transparent;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>opacity: 0.4;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>background-image: radial-gradient(#1B4C7A 0.5px, transparent 0.5px), radial-gradient(#1B4C7A 0.5px, #f0f2f5 0.5px);</p>
+<p class="p1"><span class="Apple-converted-space">        </span>background-size: 20px 20px;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>background-position: 0 0, 10px 10px;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.dark .blueprint-pattern {</p>
+<p class="p1"><span class="Apple-converted-space">         </span>background-image: radial-gradient(#ffffff 0.5px, transparent 0.5px), radial-gradient(#ffffff 0.5px, #0f1519 0.5px);</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p1">&lt;/style&gt;</p>
+<p class="p1">&lt;/head&gt;</p>
+<p class="p1">&lt;body class="bg-background-light dark:bg-background-dark text-[#1c1c0d] dark:text-white overflow-x-hidden antialiased selection:bg-orange-500 selection:text-white"&gt;</p>
+<p class="p1">&lt;div class="relative flex min-h-screen flex-col"&gt;</p>
+<p class="p1">&lt;div class="bg-slate-900 text-white text-xs font-mono py-1.5 overflow-hidden whitespace-nowrap border-b border-slate-700 relative z-[60]"&gt;</p>
+<p class="p1">&lt;div class="inline-flex gap-8 animate-marquee pl-4"&gt;</p>
+<p class="p1">&lt;span class="flex items-center gap-2"&gt;&lt;span class="text-orange-500"&gt;LME AL:&lt;/span&gt; $2,245.50 &lt;span class="text-green-400"&gt;▲ 1.2%&lt;/span&gt;&lt;/span&gt;</p>
+<p class="p1">&lt;span class="flex items-center gap-2"&gt;&lt;span class="text-orange-500"&gt;SHFE AL:&lt;/span&gt; ¥19,100 &lt;span class="text-red-400"&gt;▼ 0.5%&lt;/span&gt;&lt;/span&gt;</p>
+<p class="p1">&lt;span class="flex items-center gap-2"&gt;&lt;span class="text-orange-500"&gt;USD/INR:&lt;/span&gt; ₹83.45 &lt;span class="text-gray-400"&gt;▬ 0.0%&lt;/span&gt;&lt;/span&gt;</p>
+<p class="p1">&lt;span class="flex items-center gap-2 text-gray-400"&gt;|&lt;/span&gt;</p>
+<p class="p1">&lt;span class="flex items-center gap-2"&gt;Sionex Daily Capacity: &lt;span class="text-white font-bold"&gt;98% Operational&lt;/span&gt;&lt;/span&gt;</p>
+<p class="p1">&lt;span class="flex items-center gap-2"&gt;&lt;span class="text-orange-500"&gt;Scrap Index:&lt;/span&gt; Grade A+ Stable&lt;/span&gt;</p>
+<p class="p1">&lt;/div&gt;</p>
+<p class="p1">&lt;/div&gt;</p>
+<p class="p1">&lt;header class="sticky top-0 z-50 w-full border-b border-[#cfdde8] dark:border-white/10 bg-surface-light/95 dark:bg-[#131a1f]/95 backdrop-blur-md shadow-sm"&gt;</p>
+<p class="p1">&lt;div class="layout-container flex h-full flex-col"&gt;</p>
+<p class="p1">&lt;div class="px-4 lg:px-10 flex justify-center py-4"&gt;</p>
+<p class="p1">&lt;div class="flex w-full max-w-[1400px] items-center justify-between"&gt;</p>
+<p class="p1">&lt;div class="flex items-center gap-4"&gt;</p>
+<p class="p1">&lt;div class="flex size-10 items-center justify-center rounded bg-gradient-to-br from-industrial-blue to-[#0f2d4a] text-white shadow-lg shadow-industrial-blue/20"&gt;</p>
+<p class="p1">&lt;span class="material-symbols-outlined text-2xl"&gt;factory&lt;/span&gt;</p>
+<p class="p1">&lt;/div&gt;</p>
+<p class="p1">&lt;div class="flex flex-col"&gt;</p>
+<p class="p1">&lt;h2 class="text-xl font-bold leading-none tracking-tight text-industrial-blue dark:text-white uppercase"&gt;Sionex&lt;/h2&gt;</p>
+<p class="p1">&lt;span class="text-[0.65rem] font-bold tracking-[0.2em] text-orange-600 uppercase"&gt;Metals &amp;amp; Alloys&lt;/span&gt;</p>
+<p class="p1">&lt;/div&gt;</p>
+<p class="p1">&lt;/div&gt;</p>
+<p class="p1">&lt;div class="hidden md:flex flex-1 justify-end gap-10 items-center"&gt;</p>
+<p class="p1">&lt;nav class="flex items-center gap-8"&gt;</p>
+<p class="p1">&lt;a class="text-sm font-semibold text-slate-600 dark:text-slate-300 hover:text-orange-600 transition-colors uppercase tracking-wide text-[11px]" href="#"&gt;Products&lt;/a&gt;</p>
+<p class="p1">&lt;a class="text-sm font-semibold text-slate-600 dark:text-slate-300 hover:text-orange-600 transition-colors uppercase tracking-wide text-[11px]" href="#"&gt;Process&lt;/a&gt;</p>
+<p class="p1">&lt;a class="text-sm font-semibold text-slate-600 dark:text-slate-300 hover:text-orange-600 transition-colors uppercase tracking-wide text-[11px]" href="#"&gt;Quality&lt;/a&gt;</p>
+<p class="p1">&lt;a class="text-sm font-semibold text-slate-600 dark:text-slate-300 hover:text-orange-600 transition-colors uppercase tracking-wide text-[11px]" href="#"&gt;Contact&lt;/a&gt;</p>
+<p class="p1">&lt;/nav&gt;</p>
+<p class="p1">&lt;div class="h-8 w-px bg-gradient-to-b from-transparent via-slate-300 dark:via-slate-600 to-transparent"&gt;&lt;/div&gt;</p>
+<p class="p1">&lt;button class="flex h-10 cursor-pointer items-center justify-center overflow-hidden rounded bg-orange-600 px-6 text-white text-xs font-bold transition-all hover:bg-orange-700 shadow-lg hover:shadow-orange-500/20 uppercase tracking-wider"&gt;</p>
+<p class="p1">&lt;span class="truncate"&gt;Partner Portal&lt;/span&gt;</p>
+<p class="p1">&lt;/button&gt;</p>
+<p class="p1">&lt;/div&gt;</p>
+<p class="p1">&lt;button class="md:hidden p-2 text-black dark:text-white"&gt;</p>
+<p class="p1">&lt;span class="material-symbols-outlined"&gt;menu&lt;/span&gt;</p>
+<p class="p1">&lt;/button&gt;</p>
+<p class="p1">&lt;/div&gt;</p>
+<p class="p1">&lt;/div&gt;</p>
+<p class="p1">&lt;/div&gt;</p>
+<p class="p1">&lt;/header&gt;</p>
+<p class="p1">&lt;section class="relative w-full bg-[#0a1f33] overflow-hidden min-h-[750px] flex items-center border-b-4 border-orange-500"&gt;</p>
+<p class="p1">&lt;div class="absolute inset-0 z-0"&gt;</p>
+<p class="p1">&lt;div class="absolute inset-0 bg-gradient-to-r from-[#0a1f33] via-[#0a1f33]/90 to-[#0a1f33]/40 z-10"&gt;&lt;/div&gt;</p>
+<p class="p1">&lt;div class="absolute inset-0 z-10 tech-grid-bg opacity-30 pointer-events-none"&gt;&lt;/div&gt;</p>
+<p class="p1">&lt;img alt="Indian industrial worker inspecting molten aluminium in a foundry" class="h-full w-full object-cover object-center opacity-60 mix-blend-overlay scale-105" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC4IyuRPoRDTDa8CnHi2uJ3e8nxJUE_tOMG7WLjhvNz5wa3o836AVPwpjJCbJN6JiCT7muCEqAZyIGdCKBCzaQXpvxzI5uw9SoV2OFGEFZXLiKuuG5zto8jkFvZGHxjDyJR31lugkgStYIRYUfssIJIHFU2_qdSpcfl4c_1lNA7Hfg9DspiD0Y00RQrL8UU70c6ghU1_AcANYkaq7gJih2Gb1_3YRii-O33_TYes9V8rTePalaBp46X4UWQZK4T4NKh9F0SAwnVJJc"/&gt;</p>
+<p class="p1">&lt;div class="absolute inset-0 bg-gradient-to-b from-transparent via-white/5 to-transparent z-10 h-full w-full animate-[scan_8s_ease-in-out_infinite] opacity-30 pointer-events-none"&gt;&lt;/div&gt;</p>
+<p class="p1">&lt;/div&gt;</p>
+<p class="p1">&lt;div class="relative z-20 layout-container flex flex-col items-center w-full"&gt;</p>
+<p class="p1">&lt;div class="w-full max-w-[1400px] px-4 lg:px-10 py-10 lg:py-20"&gt;</p>
+<p class="p1">&lt;div class="grid grid-cols-12 gap-8 lg:gap-12"&gt;</p>
+<p class="p1">&lt;div class="col-span-12 lg:col-span-7 flex flex-col justify-center gap-8"&gt;</p>
+<p class="p1">&lt;div class="inline-flex items-center gap-3 rounded bg-white/5 backdrop-blur-md px-4 py-2 w-fit border border-white/10 shadow-[0_0_15px_rgba(255,165,0,0.1)]"&gt;</p>
+<p class="p1">&lt;span class="relative flex h-3 w-3"&gt;</p>
+<p class="p1">&lt;span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-green-400 opacity-75"&gt;&lt;/span&gt;</p>
+<p class="p1">&lt;span class="relative inline-flex rounded-full h-3 w-3 bg-green-500"&gt;&lt;/span&gt;</p>
+<p class="p1">&lt;/span&gt;</p>
+<p class="p1">&lt;span class="text-[10px] font-mono font-semibold uppercase tracking-widest text-white/80"&gt;ISO 9001:2015 Certified Facility&lt;/span&gt;</p>
+<p class="p1">&lt;/div&gt;</p>
+<p class="p1">&lt;h1 class="font-display text-5xl font-bold leading-[0.95] tracking-[-0.02em] text-white sm:text-6xl md:text-7xl lg:text-[5.5rem] drop-shadow-2xl"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>Forging &lt;br/&gt;</p>
+<p class="p1">&lt;span class="text-transparent bg-clip-text bg-gradient-to-r from-orange-400 via-orange-100 to-white"&gt;India's Industrial&lt;/span&gt;&lt;br/&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>Backbone.</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;/h1&gt;</p>
+<p class="p1">&lt;div class="flex flex-col gap-4 border-l-2 border-orange-500 pl-6 max-w-xl"&gt;</p>
+<p class="p1">&lt;p class="text-lg text-gray-300 font-light leading-relaxed"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                                </span>Premium high-purity recycled aluminium supplier. Bridging the gap between Indian resourcefulness and Global precision standards.</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;/p&gt;</p>
+<p class="p1">&lt;div class="flex gap-4 text-xs font-mono text-gray-400 uppercase tracking-tight"&gt;</p>
+<p class="p1">&lt;span&gt;• 99.99% Purity&lt;/span&gt;</p>
+<p class="p1">&lt;span&gt;• Low Carbon Footprint&lt;/span&gt;</p>
+<p class="p1">&lt;span&gt;• Gujarat Hub&lt;/span&gt;</p>
+<p class="p1">&lt;/div&gt;</p>
+<p class="p1">&lt;/div&gt;</p>
+<p class="p1">&lt;div class="flex flex-wrap gap-4 pt-6"&gt;</p>
+<p class="p1">&lt;button class="group flex h-14 min-w-[180px] cursor-pointer items-center justify-center rounded bg-gradient-to-r from-orange-600 to-orange-500 px-8 text-white text-sm font-bold uppercase tracking-wider transition-all hover:shadow-[0_0_20px_rgba(249,115,22,0.4)] border border-orange-400/50"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                                </span>Request Quote</p>
+<p class="p1"><span class="Apple-converted-space">                                </span>&lt;span class="material-symbols-outlined ml-2 group-hover:translate-x-1 transition-transform text-lg"&gt;arrow_forward&lt;/span&gt;</p>
+<p class="p1">&lt;/button&gt;</p>
+<p class="p1">&lt;button class="group flex h-14 min-w-[180px] cursor-pointer items-center justify-center rounded border border-white/20 bg-white/5 backdrop-blur-sm px-8 text-white text-sm font-bold uppercase tracking-wider transition-all hover:bg-white/10 hover:border-white/40"&gt;</p>
+<p class="p1">&lt;span class="material-symbols-outlined mr-2 text-lg text-gray-300"&gt;grid_on&lt;/span&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                                </span>View Stock</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;/button&gt;</p>
+<p class="p1">&lt;/div&gt;</p>
+<p class="p1">&lt;/div&gt;</p>
+<p class="p1">&lt;div class="hidden lg:col-span-5 lg:flex flex-col justify-end items-end pb-4"&gt;</p>
+<p class="p1">&lt;div class="glass-panel p-8 rounded w-full max-w-md border border-white/10 relative overflow-hidden"&gt;</p>
+<p class="p1">&lt;div class="absolute top-0 right-0 p-4 opacity-20"&gt;</p>
+<p class="p1">&lt;span class="material-symbols-outlined text-6xl text-white"&gt;precision_manufacturing&lt;/span&gt;</p>
+<p class="p1">&lt;/div&gt;</p>
+<p class="p1">&lt;div class="grid grid-cols-2 gap-6 mb-6 relative z-10"&gt;</p>
+<p class="p1">&lt;div&gt;</p>
+<p class="p1">&lt;span class="text-gray-400 text-xs font-mono uppercase tracking-wider block mb-1"&gt;Daily Output&lt;/span&gt;</p>
+<p class="p1">&lt;div class="flex items-baseline gap-2"&gt;</p>
+<p class="p1">&lt;span class="text-orange-400 text-4xl font-bold font-mono"&gt;145&lt;/span&gt;</p>
+<p class="p1">&lt;span class="text-white text-sm font-bold"&gt;MT&lt;/span&gt;</p>
+<p class="p1">&lt;/div&gt;</p>
+<p class="p1">&lt;/div&gt;</p>
+<p class="p1">&lt;div&gt;</p>
+<p class="p1">&lt;span class="text-gray-400 text-xs font-mono uppercase tracking-wider block mb-1"&gt;Grid Load&lt;/span&gt;</p>
+<p class="p1">&lt;div class="flex items-baseline gap-2"&gt;</p>
+<p class="p1">&lt;span class="text-green-400 text-4xl font-bold font-mono"&gt;98&lt;/span&gt;</p>
+<p class="p1">&lt;span class="text-white text-sm font-bold"&gt;%&lt;/span&gt;</p>
+<p class="p1">&lt;/div&gt;</p>
+<p class="p1">&lt;/div&gt;</p>
+<p class="p1">&lt;/div&gt;</p>
+<p class="p1">&lt;div class="space-y-4 relative z-10"&gt;</p>
+<p class="p1">&lt;div&gt;</p>
+<p class="p1">&lt;div class="flex justify-between text-xs font-mono text-gray-400 mb-1"&gt;</p>
+<p class="p1">&lt;span&gt;FURNACE A&lt;/span&gt;</p>
+<p class="p1">&lt;span class="text-white"&gt;1250°C&lt;/span&gt;</p>
+<p class="p1">&lt;/div&gt;</p>
+<p class="p1">&lt;div class="w-full bg-white/10 h-1 rounded-sm overflow-hidden"&gt;</p>
+<p class="p1">&lt;div class="bg-gradient-to-r from-orange-600 to-yellow-500 h-full w-[92%] shadow-[0_0_10px_rgba(249,115,22,0.5)]"&gt;&lt;/div&gt;</p>
+<p class="p1">&lt;/div&gt;</p>
+<p class="p1">&lt;/div&gt;</p>
+<p class="p1">&lt;div&gt;</p>
+<p class="p1">&lt;div class="flex justify-between text-xs font-mono text-gray-400 mb-1"&gt;</p>
+<p class="p1">&lt;span&gt;FURNACE B&lt;/span&gt;</p>
+<p class="p1">&lt;span class="text-white"&gt;1180°C&lt;/span&gt;</p>
+<p class="p1">&lt;/div&gt;</p>
+<p class="p1">&lt;div class="w-full bg-white/10 h-1 rounded-sm overflow-hidden"&gt;</p>
+<p class="p1">&lt;div class="bg-gradient-to-r from-orange-600 to-yellow-500 h-full w-[85%]"&gt;&lt;/div&gt;</p>
+<p class="p1">&lt;/div&gt;</p>
+<p class="p1">&lt;/div&gt;</p>
+<p class="p1">&lt;/div&gt;</p>
+<p class="p1">&lt;div class="mt-6 pt-4 border-t border-white/10 flex items-center justify-between"&gt;</p>
+<p class="p1">&lt;div class="flex items-center gap-2"&gt;</p>
+<p class="p1">&lt;span class="material-symbols-outlined text-orange-500 text-lg"&gt;location_on&lt;/span&gt;</p>
+<p class="p1">&lt;span class="text-white text-sm font-bold"&gt;Gujarat, IN&lt;/span&gt;</p>
+<p class="p1">&lt;/div&gt;</p>
+<p class="p1">&lt;span class="px-2 py-1 bg-green-500/20 text-green-400 text-[10px] font-bold uppercase rounded border border-green-500/30"&gt;Live Data&lt;/span&gt;</p>
+<p class="p1">&lt;/div&gt;</p>
+<p class="p1">&lt;/div&gt;</p>
+<p class="p1">&lt;/div&gt;</p>
+<p class="p1">&lt;/div&gt;</p>
+<p class="p1">&lt;/div&gt;</p>
+<p class="p1">&lt;/div&gt;</p>
+<p class="p1">&lt;/section&gt;</p>
+<p class="p1">&lt;div class="relative z-20 w-full bg-gradient-to-b from-[#e6eef7] to-[#f0f2f5] dark:from-[#1a190b] dark:to-[#0f1519] border-b border-[#cfdde8] dark:border-white/10"&gt;</p>
+<p class="p1">&lt;div class="mx-auto max-w-[1400px] px-4 lg:px-10"&gt;</p>
+<p class="p1">&lt;div class="grid grid-cols-2 md:grid-cols-4 divide-x divide-[#cfdde8] dark:divide-white/10"&gt;</p>
+<p class="p1">&lt;div class="flex flex-col p-6 items-center md:items-start group hover:bg-white/50 dark:hover:bg-white/5 transition-colors"&gt;</p>
+<p class="p1">&lt;span class="text-slate-500 dark:text-gray-400 text-[10px] font-bold uppercase tracking-widest mb-2"&gt;Certification&lt;/span&gt;</p>
+<p class="p1">&lt;div class="flex items-center gap-3"&gt;</p>
+<p class="p1">&lt;span class="material-symbols-outlined text-industrial-blue text-3xl"&gt;verified_user&lt;/span&gt;</p>
+<p class="p1">&lt;div class="flex flex-col"&gt;</p>
+<p class="p1">&lt;span class="text-sm font-bold text-gray-900 dark:text-white leading-tight"&gt;ISO 9001:2015&lt;/span&gt;</p>
+<p class="p1">&lt;span class="text-[10px] text-gray-500"&gt;Bureau Veritas&lt;/span&gt;</p>
+<p class="p1">&lt;/div&gt;</p>
+<p class="p1">&lt;/div&gt;</p>
+<p class="p1">&lt;/div&gt;</p>
+<p class="p1">&lt;div class="flex flex-col p-6 items-center md:items-start group hover:bg-white/50 dark:hover:bg-white/5 transition-colors"&gt;</p>
+<p class="p1">&lt;span class="text-slate-500 dark:text-gray-400 text-[10px] font-bold uppercase tracking-widest mb-2"&gt;Facility Location&lt;/span&gt;</p>
+<p class="p1">&lt;div class="flex items-center gap-3"&gt;</p>
+<p class="p1">&lt;span class="material-symbols-outlined text-orange-600 text-3xl"&gt;factory&lt;/span&gt;</p>
+<p class="p1">&lt;div class="flex flex-col"&gt;</p>
+<p class="p1">&lt;span class="text-sm font-bold text-gray-900 dark:text-white leading-tight"&gt;Sector 4, Metal Dist.&lt;/span&gt;</p>
+<p class="p1">&lt;span class="text-[10px] text-gray-500"&gt;Dahej GIDC&lt;/span&gt;</p>
+<p class="p1">&lt;/div&gt;</p>
+<p class="p1">&lt;/div&gt;</p>
+<p class="p1">&lt;/div&gt;</p>
+<p class="p1">&lt;div class="flex flex-col p-6 items-center md:items-start group hover:bg-white/50 dark:hover:bg-white/5 transition-colors"&gt;</p>
+<p class="p1">&lt;span class="text-slate-500 dark:text-gray-400 text-[10px] font-bold uppercase tracking-widest mb-2"&gt;Capacity&lt;/span&gt;</p>
+<p class="p1">&lt;div class="flex items-center gap-3"&gt;</p>
+<p class="p1">&lt;span class="material-symbols-outlined text-slate-600 dark:text-slate-400 text-3xl"&gt;conveyor_belt&lt;/span&gt;</p>
+<p class="p1">&lt;div class="flex flex-col"&gt;</p>
+<p class="p1">&lt;span class="text-sm font-bold text-gray-900 dark:text-white leading-tight"&gt;50,000 MT/Year&lt;/span&gt;</p>
+<p class="p1">&lt;span class="text-[10px] text-gray-500"&gt;Scalable Output&lt;/span&gt;</p>
+<p class="p1">&lt;/div&gt;</p>
+<p class="p1">&lt;/div&gt;</p>
+<p class="p1">&lt;/div&gt;</p>
+<p class="p1">&lt;div class="flex flex-col p-6 items-center md:items-start group hover:bg-white/50 dark:hover:bg-white/5 transition-colors"&gt;</p>
+<p class="p1">&lt;span class="text-slate-500 dark:text-gray-400 text-[10px] font-bold uppercase tracking-widest mb-2"&gt;Initiative&lt;/span&gt;</p>
+<p class="p1">&lt;div class="flex items-center gap-3"&gt;</p>
+<p class="p1">&lt;span class="material-symbols-outlined text-orange-500 text-3xl"&gt;handshake&lt;/span&gt;</p>
+<p class="p1">&lt;div class="flex flex-col"&gt;</p>
+<p class="p1">&lt;span class="text-sm font-bold text-gray-900 dark:text-white leading-tight"&gt;Make In India&lt;/span&gt;</p>
+<p class="p1">&lt;span class="text-[10px] text-gray-500"&gt;Govt. Recognized&lt;/span&gt;</p>
+<p class="p1">&lt;/div&gt;</p>
+<p class="p1">&lt;/div&gt;</p>
+<p class="p1">&lt;/div&gt;</p>
+<p class="p1">&lt;/div&gt;</p>
+<p class="p1">&lt;/div&gt;</p>
+<p class="p1">&lt;/div&gt;</p>
+<p class="p1">&lt;section class="py-24 relative bg-background-light dark:bg-background-dark overflow-hidden"&gt;</p>
+<p class="p1">&lt;div class="absolute inset-0 blueprint-pattern pointer-events-none"&gt;&lt;/div&gt;</p>
+<p class="p1">&lt;div class="relative z-10 mx-auto max-w-[1400px] px-4 lg:px-10"&gt;</p>
+<p class="p1">&lt;div class="flex flex-col gap-4 mb-16 max-w-3xl border-l-4 border-industrial-blue pl-6"&gt;</p>
+<p class="p1">&lt;span class="text-orange-600 font-bold tracking-[0.2em] uppercase text-xs"&gt;Core Competencies&lt;/span&gt;</p>
+<p class="p1">&lt;h2 class="text-4xl md:text-5xl font-bold text-slate-900 dark:text-white tracking-tight leading-none"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>Engineering &lt;br/&gt; &lt;span class="text-slate-500"&gt;The Future of Indian Metallurgy.&lt;/span&gt;</p>
+<p class="p1">&lt;/h2&gt;</p>
+<p class="p1">&lt;p class="text-slate-600 dark:text-slate-400 text-lg max-w-2xl leading-relaxed"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>Comprehensive aluminium recycling and refining services tailored for India's growing industrial needs. We combine local scrap sourcing with world-class refining technology.</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;/p&gt;</p>
+<p class="p1">&lt;/div&gt;</p>
+<p class="p1">&lt;div class="grid grid-cols-1 md:grid-cols-3 gap-8"&gt;</p>
+<p class="p1">&lt;div class="group relative flex flex-col justify-end h-[500px] overflow-hidden rounded-lg border border-[#cfdde8] dark:border-white/10 hover:border-orange-500 transition-all duration-300 shadow-xl"&gt;</p>
+<p class="p1">&lt;img alt="Scrap Metal Yard" class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-110 brightness-[0.4]" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDX6MfmdQQ_WykaBnhAlb9TK2R5AoMI1vhSbxpAN18Byi6sy0LvOqXzP4ifGbI0dblvXSSCUH-cbk2BS1Z8OCVIKJFcCZiQVWlzVlHp2lng9ySy-FPwHrV2VTiLB-6sf5mLNW-dCFeF1Ca1KVqzmqgRRdvWqs_qPjJXpmaNzvUiVJxf6hshga8jNbiRqv09ZYj1VNIAObVwA2OBDKHe-zwWFAS1MaBantGU99MqPIExMK1HEKSNsSANtYxZ0StDvVj17aIT6bpy2PA"/&gt;</p>
+<p class="p1">&lt;div class="absolute inset-0 bg-gradient-to-t from-black via-black/50 to-transparent opacity-90"&gt;&lt;/div&gt;</p>
+<p class="p1">&lt;div class="relative z-10 p-8 flex flex-col h-full justify-end"&gt;</p>
+<p class="p1">&lt;div class="mb-auto opacity-0 group-hover:opacity-100 transition-opacity duration-500 transform -translate-y-4 group-hover:translate-y-0"&gt;</p>
+<p class="p1">&lt;span class="text-orange-400 font-mono text-xs border border-orange-400/50 px-2 py-1 rounded"&gt;STAGE 01&lt;/span&gt;</p>
+<p class="p1">&lt;/div&gt;</p>
+<p class="p1">&lt;div class="mb-4 flex size-14 items-center justify-center rounded-full bg-orange-600 text-white shadow-lg border-2 border-orange-400"&gt;</p>
+<p class="p1">&lt;span class="material-symbols-outlined text-3xl"&gt;recycling&lt;/span&gt;</p>
+<p class="p1">&lt;/div&gt;</p>
+<p class="p1">&lt;h3 class="mb-3 text-3xl font-bold text-white font-display"&gt;Scrap Sourcing&lt;/h3&gt;</p>
+<p class="p1">&lt;p class="text-gray-300 leading-relaxed text-sm border-l-2 border-orange-500 pl-4 mb-6"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>Pan-India network ensuring a consistent supply of high-grade aluminium scrap. Utilizing XRF sorting technology for &lt;span class="text-white font-bold"&gt;99% pre-melt accuracy&lt;/span&gt;.</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;/p&gt;</p>
+<p class="p1">&lt;div class="grid grid-cols-2 gap-4 border-t border-white/20 pt-4 text-xs font-mono text-gray-400"&gt;</p>
+<p class="p1">&lt;div&gt;</p>
+<p class="p1">&lt;span class="block text-gray-500 uppercase"&gt;Input&lt;/span&gt;</p>
+<p class="p1">&lt;span class="text-white"&gt;Taint Tabor, Tense&lt;/span&gt;</p>
+<p class="p1">&lt;/div&gt;</p>
+<p class="p1">&lt;div&gt;</p>
+<p class="p1">&lt;span class="block text-gray-500 uppercase"&gt;Volume&lt;/span&gt;</p>
+<p class="p1">&lt;span class="text-white"&gt;500MT / Wk&lt;/span&gt;</p>
+<p class="p1">&lt;/div&gt;</p>
+<p class="p1">&lt;/div&gt;</p>
+<p class="p1">&lt;/div&gt;</p>
+<p class="p1">&lt;/div&gt;</p>
+<p class="p1">&lt;div class="group relative flex flex-col justify-end h-[500px] overflow-hidden rounded-lg border border-[#cfdde8] dark:border-white/10 hover:border-orange-500 transition-all duration-300 shadow-xl translate-y-0 md:-translate-y-8"&gt;</p>
+<p class="p1">&lt;img alt="Molten Metal Refining" class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-110 brightness-[0.4]" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB9YPL-KXYo8TMe90IRqZCb6c0wkkqvdC3WQtJMwEqtsrhOaodhHqUTMgXISn2WX75oqe__j4MApPygnHRoxtlysjN1ZMx2TcJmaHibu3oyhZtsZZkAKsfUzkoAoZbgFIaq58Xhg5K4YHj7Myh0q9kA2wiCyWhL0qjjPsTBz05b26EpIVvQCFC-JVfhuIUaZkzu5DoxKiQkXGzKWwPnRFQHXZ4wCSxT8jhzyKKavGu439z8XyZ4IY6ggLJT4fQydQYodNrBdywWOqk"/&gt;</p>
+<p class="p1">&lt;div class="absolute inset-0 bg-gradient-to-t from-black via-black/50 to-transparent opacity-90"&gt;&lt;/div&gt;</p>
+<p class="p1">&lt;div class="relative z-10 p-8 flex flex-col h-full justify-end"&gt;</p>
+<p class="p1">&lt;div class="mb-auto opacity-0 group-hover:opacity-100 transition-opacity duration-500 transform -translate-y-4 group-hover:translate-y-0"&gt;</p>
+<p class="p1">&lt;span class="text-orange-400 font-mono text-xs border border-orange-400/50 px-2 py-1 rounded"&gt;STAGE 02&lt;/span&gt;</p>
+<p class="p1">&lt;/div&gt;</p>
+<p class="p1">&lt;div class="mb-4 flex size-14 items-center justify-center rounded-full bg-industrial-blue text-white shadow-lg border-2 border-blue-400"&gt;</p>
+<p class="p1">&lt;span class="material-symbols-outlined text-3xl"&gt;science&lt;/span&gt;</p>
+<p class="p1">&lt;/div&gt;</p>
+<p class="p1">&lt;h3 class="mb-3 text-3xl font-bold text-white font-display"&gt;Refining &amp;amp; Alloying&lt;/h3&gt;</p>
+<p class="p1">&lt;p class="text-gray-300 leading-relaxed text-sm border-l-2 border-blue-400 pl-4 mb-6"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>Advanced rotary furnaces with flux injection systems. We remove impurities to achieve specific alloy compositions down to the &lt;span class="text-white font-bold"&gt;PPM level&lt;/span&gt;.</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;/p&gt;</p>
+<p class="p1">&lt;div class="grid grid-cols-2 gap-4 border-t border-white/20 pt-4 text-xs font-mono text-gray-400"&gt;</p>
+<p class="p1">&lt;div&gt;</p>
+<p class="p1">&lt;span class="block text-gray-500 uppercase"&gt;Temp&lt;/span&gt;</p>
+<p class="p1">&lt;span class="text-white"&gt;750°C ± 5°C&lt;/span&gt;</p>
+<p class="p1">&lt;/div&gt;</p>
+<p class="p1">&lt;div&gt;</p>
+<p class="p1">&lt;span class="block text-gray-500 uppercase"&gt;Degassing&lt;/span&gt;</p>
+<p class="p1">&lt;span class="text-white"&gt;Argon/N2 Rotary&lt;/span&gt;</p>
+<p class="p1">&lt;/div&gt;</p>
+<p class="p1">&lt;/div&gt;</p>
+<p class="p1">&lt;/div&gt;</p>
+<p class="p1">&lt;/div&gt;</p>
+<p class="p1">&lt;div class="group relative flex flex-col justify-end h-[500px] overflow-hidden rounded-lg border border-[#cfdde8] dark:border-white/10 hover:border-orange-500 transition-all duration-300 shadow-xl"&gt;</p>
+<p class="p1">&lt;img alt="Aluminium Ingots" class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-110 brightness-[0.4]" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBb-iaKklVQ1hOmloZV7Wioae4ayke2WlqOFybJCXgEF3aGr-Xq9w5FrRrBNLzHtMansFAK8_N6adEAxJV6_oz2y73TThD6Lc063vlkyKyHFurjaBVFDM2dgDTB9M2N_OdAQ8WI9-3hzhocSQhABvmnG1sqVVboVKOoyDcOv5jKz9cWAbubjCtxJYbFHBshFU40LDlJ8ld57YKq3bSskNNEHwHLFFma9jP4kvS1QO2-CtU9N9v7PBZTdbrU1Yi_B_j6Ahf2-qEqdPw"/&gt;</p>
+<p class="p1">&lt;div class="absolute inset-0 bg-gradient-to-t from-black via-black/50 to-transparent opacity-90"&gt;&lt;/div&gt;</p>
+<p class="p1">&lt;div class="relative z-10 p-8 flex flex-col h-full justify-end"&gt;</p>
+<p class="p1">&lt;div class="mb-auto opacity-0 group-hover:opacity-100 transition-opacity duration-500 transform -translate-y-4 group-hover:translate-y-0"&gt;</p>
+<p class="p1">&lt;span class="text-orange-400 font-mono text-xs border border-orange-400/50 px-2 py-1 rounded"&gt;STAGE 03&lt;/span&gt;</p>
+<p class="p1">&lt;/div&gt;</p>
+<p class="p1">&lt;div class="mb-4 flex size-14 items-center justify-center rounded-full bg-slate-700 text-white shadow-lg border-2 border-slate-500"&gt;</p>
+<p class="p1">&lt;span class="material-symbols-outlined text-3xl"&gt;precision_manufacturing&lt;/span&gt;</p>
+<p class="p1">&lt;/div&gt;</p>
+<p class="p1">&lt;h3 class="mb-3 text-3xl font-bold text-white font-display"&gt;Custom Casting&lt;/h3&gt;</p>
+<p class="p1">&lt;p class="text-gray-300 leading-relaxed text-sm border-l-2 border-slate-400 pl-4 mb-6"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>Precision casting into standard 5kg-8kg ingots, sows, and T-bars. Automated stacking and strapping ready for your &lt;span class="text-white font-bold"&gt;JIT manufacturing lines&lt;/span&gt;.</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;/p&gt;</p>
+<p class="p1">&lt;div class="grid grid-cols-2 gap-4 border-t border-white/20 pt-4 text-xs font-mono text-gray-400"&gt;</p>
+<p class="p1">&lt;div&gt;</p>
+<p class="p1">&lt;span class="block text-gray-500 uppercase"&gt;Forms&lt;/span&gt;</p>
+<p class="p1">&lt;span class="text-white"&gt;Ingot, Sow, Liquid&lt;/span&gt;</p>
+<p class="p1">&lt;/div&gt;</p>
+<p class="p1">&lt;div&gt;</p>
+<p class="p1">&lt;span class="block text-gray-500 uppercase"&gt;Stacking&lt;/span&gt;</p>
+<p class="p1">&lt;span class="text-white"&gt;Robotic Palletizer&lt;/span&gt;</p>
+<p class="p1">&lt;/div&gt;</p>
+<p class="p1">&lt;/div&gt;</p>
+<p class="p1">&lt;/div&gt;</p>
+<p class="p1">&lt;/div&gt;</p>
+<p class="p1">&lt;/div&gt;</p>
+<p class="p1">&lt;/div&gt;</p>
+<p class="p1">&lt;/section&gt;</p>
+<p class="p1">&lt;section class="py-24 bg-white dark:bg-[#151515] border-y border-slate-200 dark:border-white/5 relative"&gt;</p>
+<p class="p1">&lt;div class="absolute inset-0 tech-grid-bg opacity-10 pointer-events-none"&gt;&lt;/div&gt;</p>
+<p class="p1">&lt;div class="mx-auto max-w-[1400px] px-4 lg:px-10 relative z-10"&gt;</p>
+<p class="p1">&lt;div class="flex flex-col md:flex-row md:items-end justify-between mb-16 gap-6"&gt;</p>
+<p class="p1">&lt;div&gt;</p>
+<p class="p1">&lt;span class="text-industrial-blue font-bold tracking-[0.2em] uppercase text-xs mb-2 block"&gt;Standard Operating Procedure&lt;/span&gt;</p>
+<p class="p1">&lt;h2 class="text-3xl md:text-4xl font-bold text-black dark:text-white"&gt;Quality Protocol&lt;/h2&gt;</p>
+<p class="p1">&lt;/div&gt;</p>
+<p class="p1">&lt;button class="flex items-center gap-2 text-sm font-bold text-industrial-blue hover:text-orange-600 transition-colors uppercase tracking-wider"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>Download SOP PDF<span class="Apple-converted-space"> </span></p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;span class="material-symbols-outlined text-lg"&gt;download&lt;/span&gt;</p>
+<p class="p1">&lt;/button&gt;</p>
+<p class="p1">&lt;/div&gt;</p>
+<p class="p1">&lt;div class="hidden md:grid grid-cols-4 gap-6 w-full"&gt;</p>
+<p class="p1">&lt;div class="group relative h-[400px] rounded overflow-hidden cursor-pointer border border-gray-200 dark:border-white/10 hover:shadow-2xl hover:border-orange-500 transition-all duration-300"&gt;</p>
+<p class="p1">&lt;img alt="Scrap Sorting India" class="absolute inset-0 h-full w-full object-cover transition-transform duration-500 group-hover:scale-105" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAmTjhyyVw9x0ND2CxN3gPRu6DWkLxbsJGA-tKsSG7rDG6khp5IxUcQqB_DygCqHFv5WIzl6dT0VusOvBWkZBmaagAIKSSi7Q04sGj3R035h9cz6hrdBJAxlevn0aIRlPfY4hiF0wPzSrlJtfwGxN4cruZItp-tYASnT8sYcJHRo2gjFsxT-YdSPDpnqGugP0CWSR0Bi9Uet9WnZj-a97ui6nDJQ1DVia4uT8PyMyvAsnr8R1YOhRL_pZqmc2b-wiqGqQ9eudJu_ek"/&gt;</p>
+<p class="p1">&lt;div class="absolute inset-0 bg-gradient-to-t from-black via-black/50 to-transparent"&gt;&lt;/div&gt;</p>
+<p class="p1">&lt;div class="absolute top-0 right-0 p-4"&gt;</p>
+<p class="p1">&lt;span class="text-5xl font-black text-white/10 group-hover:text-orange-500/20 transition-colors"&gt;01&lt;/span&gt;</p>
+<p class="p1">&lt;/div&gt;</p>
+<p class="p1">&lt;div class="absolute bottom-0 left-0 right-0 p-6 border-t border-white/10 bg-black/40 backdrop-blur-sm"&gt;</p>
+<p class="p1">&lt;h3 class="text-xl font-bold text-white mb-2 uppercase tracking-wide"&gt;Sourcing&lt;/h3&gt;</p>
+<p class="p1">&lt;p class="text-xs text-gray-300 leading-relaxed"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>Collection from verified vendor partners. Radiation checks and spectral analysis before entry.</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;/p&gt;</p>
+<p class="p1">&lt;/div&gt;</p>
+<p class="p1">&lt;/div&gt;</p>
+<p class="p1">&lt;div class="group relative h-[400px] rounded overflow-hidden cursor-pointer border border-gray-200 dark:border-white/10 hover:shadow-2xl hover:border-orange-500 transition-all duration-300"&gt;</p>
+<p class="p1">&lt;img alt="Furnace Melting" class="absolute inset-0 h-full w-full object-cover transition-transform duration-500 group-hover:scale-105" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD0x7zAU788GtjHeBOK3WBQFiTUW607xKkvADhEW3RA3QfUMKavDfdVCuNHXaHCpbz3wxCFlj7ItUrhYQ3iPfl8bxcYVfl1Xp5A7bVF2pn34OAQ8Q3obkFXubRnAYEWryWneFVwuxpcu39136JsOW1jMKftMz4QpFvhBbfqaA86qm9Ii4koBFVOrGEMqphvKyuqZtuRhU2HsGCL55_YeP8u2mUNMe9kMbc0IwuqUx-kqshiX04wu4c-0lEtsujc1Z640FnslPQ-C1k"/&gt;</p>
+<p class="p1">&lt;div class="absolute inset-0 bg-gradient-to-t from-black via-black/50 to-transparent"&gt;&lt;/div&gt;</p>
+<p class="p1">&lt;div class="absolute top-0 right-0 p-4"&gt;</p>
+<p class="p1">&lt;span class="text-5xl font-black text-white/10 group-hover:text-orange-500/20 transition-colors"&gt;02&lt;/span&gt;</p>
+<p class="p1">&lt;/div&gt;</p>
+<p class="p1">&lt;div class="absolute bottom-0 left-0 right-0 p-6 border-t border-white/10 bg-black/40 backdrop-blur-sm"&gt;</p>
+<p class="p1">&lt;h3 class="text-xl font-bold text-white mb-2 uppercase tracking-wide"&gt;Smelting&lt;/h3&gt;</p>
+<p class="p1">&lt;p class="text-xs text-gray-300 leading-relaxed"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>Charge calculation by AI software. High-temp melting with automated burner controls.</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;/p&gt;</p>
+<p class="p1">&lt;/div&gt;</p>
+<p class="p1">&lt;/div&gt;</p>
+<p class="p1">&lt;div class="group relative h-[400px] rounded overflow-hidden cursor-pointer border border-gray-200 dark:border-white/10 hover:shadow-2xl hover:border-orange-500 transition-all duration-300"&gt;</p>
+<p class="p1">&lt;img alt="Metal Purification" class="absolute inset-0 h-full w-full object-cover transition-transform duration-500 group-hover:scale-105" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBLADjK9Edii7IvytdybdDRH-UAOrmK7s-Lg06lqEVE2EQAyFwNPTfltQbHAA3bJd2kDNQdMZ6wnw2i2rFzyhbxeaIUEVX8w7102AEMVsyOtBkEiZPxLn1X68rJWuBb42EpSFKKxccwsJ7t4-I2OQ_rvaQyc3nMwiCXfBxr0Vqvv_V5vB6DyLUGfc7GGpHFvyaC-tVzkpcR8KmQ5YlR67FVRgWMJMrVAvfsmBSaShNi06Pg5bljjPy6_0dbiX2V6AI1gSJz9_MllsY"/&gt;</p>
+<p class="p1">&lt;div class="absolute inset-0 bg-gradient-to-t from-black via-black/50 to-transparent"&gt;&lt;/div&gt;</p>
+<p class="p1">&lt;div class="absolute top-0 right-0 p-4"&gt;</p>
+<p class="p1">&lt;span class="text-5xl font-black text-white/10 group-hover:text-orange-500/20 transition-colors"&gt;03&lt;/span&gt;</p>
+<p class="p1">&lt;/div&gt;</p>
+<p class="p1">&lt;div class="absolute bottom-0 left-0 right-0 p-6 border-t border-white/10 bg-black/40 backdrop-blur-sm"&gt;</p>
+<p class="p1">&lt;h3 class="text-xl font-bold text-white mb-2 uppercase tracking-wide"&gt;Purification&lt;/h3&gt;</p>
+<p class="p1">&lt;p class="text-xs text-gray-300 leading-relaxed"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>Ceramic foam filtration (30-50 PPI). Degassing to remove hydrogen content &amp;lt; 0.15 ml/100g.</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;/p&gt;</p>
+<p class="p1">&lt;/div&gt;</p>
+<p class="p1">&lt;/div&gt;</p>
+<p class="p1">&lt;div class="group relative h-[400px] rounded overflow-hidden cursor-pointer border border-gray-200 dark:border-white/10 hover:shadow-2xl hover:border-orange-500 transition-all duration-300"&gt;</p>
+<p class="p1">&lt;img alt="Dispatch Logistics" class="absolute inset-0 h-full w-full object-cover transition-transform duration-500 group-hover:scale-105" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBPfnqdfc5kGp5vVSWHEuMZIWn25jiE1WW43ulxbkUDG3ENMUu9JShr7wZe4ZxvlWvA1HHGFHSXynxr--4sWgAr48freFY4mtmM3G2vAcaSQfE8JOejHRajeQu1JceCKA0gRZI9bR_yaWGRm8sBjbNNwXO_ZqBEY_OlVhPFS9aO13y9493nbyhrw8gXiPh5Z8TwrWS1B2BgcnCmfe1SdPyCK_Yi1cvESFGOyJBNWguM3Q8AV2GDEX9qj4DraE126ff9onRvdDpVZYI"/&gt;</p>
+<p class="p1">&lt;div class="absolute inset-0 bg-gradient-to-t from-black via-black/50 to-transparent"&gt;&lt;/div&gt;</p>
+<p class="p1">&lt;div class="absolute top-0 right-0 p-4"&gt;</p>
+<p class="p1">&lt;span class="text-5xl font-black text-white/10 group-hover:text-orange-500/20 transition-colors"&gt;04&lt;/span&gt;</p>
+<p class="p1">&lt;/div&gt;</p>
+<p class="p1">&lt;div class="absolute bottom-0 left-0 right-0 p-6 border-t border-white/10 bg-black/40 backdrop-blur-sm"&gt;</p>
+<p class="p1">&lt;h3 class="text-xl font-bold text-white mb-2 uppercase tracking-wide"&gt;Logistics&lt;/h3&gt;</p>
+<p class="p1">&lt;p class="text-xs text-gray-300 leading-relaxed"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>Final Spectro analysis certificate generation. GPS tracked fleet for Pan-India delivery.</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;/p&gt;</p>
+<p class="p1">&lt;/div&gt;</p>
+<p class="p1">&lt;/div&gt;</p>
+<p class="p1">&lt;/div&gt;</p>
+<p class="p1">&lt;div class="md:hidden flex flex-col gap-8 relative pl-4 border-l-2 border-gray-200 dark:border-white/10 ml-4"&gt;</p>
+<p class="p1">&lt;div class="relative pl-8"&gt;</p>
+<p class="p1">&lt;div class="absolute -left-[21px] top-0 size-10 rounded-full bg-white dark:bg-zinc-800 border-2 border-orange-500 flex items-center justify-center shadow-lg"&gt;</p>
+<p class="p1">&lt;span class="text-xs font-bold"&gt;01&lt;/span&gt;</p>
+<p class="p1">&lt;/div&gt;</p>
+<p class="p1">&lt;h3 class="text-lg font-bold text-industrial-blue dark:text-white"&gt;Sourcing&lt;/h3&gt;</p>
+<p class="p1">&lt;p class="text-sm text-misty-taupe dark:text-gray-400 mt-1"&gt;Collection of premium scrap.&lt;/p&gt;</p>
+<p class="p1">&lt;/div&gt;</p>
+<p class="p1">&lt;div class="relative pl-8"&gt;</p>
+<p class="p1">&lt;div class="absolute -left-[21px] top-0 size-10 rounded-full bg-white dark:bg-zinc-800 border-2 border-gray-300 dark:border-white/20 flex items-center justify-center shadow-lg"&gt;</p>
+<p class="p1">&lt;span class="text-xs font-bold"&gt;02&lt;/span&gt;</p>
+<p class="p1">&lt;/div&gt;</p>
+<p class="p1">&lt;h3 class="text-lg font-bold text-industrial-blue dark:text-white"&gt;Melting&lt;/h3&gt;</p>
+<p class="p1">&lt;p class="text-sm text-misty-taupe dark:text-gray-400 mt-1"&gt;High-temperature smelting.&lt;/p&gt;</p>
+<p class="p1">&lt;/div&gt;</p>
+<p class="p1">&lt;div class="relative pl-8"&gt;</p>
+<p class="p1">&lt;div class="absolute -left-[21px] top-0 size-10 rounded-full bg-white dark:bg-zinc-800 border-2 border-gray-300 dark:border-white/20 flex items-center justify-center shadow-lg"&gt;</p>
+<p class="p1">&lt;span class="text-xs font-bold"&gt;03&lt;/span&gt;</p>
+<p class="p1">&lt;/div&gt;</p>
+<p class="p1">&lt;h3 class="text-lg font-bold text-industrial-blue dark:text-white"&gt;Purification&lt;/h3&gt;</p>
+<p class="p1">&lt;p class="text-sm text-misty-taupe dark:text-gray-400 mt-1"&gt;Achieving 99.99% purity.&lt;/p&gt;</p>
+<p class="p1">&lt;/div&gt;</p>
+<p class="p1">&lt;div class="relative pl-8"&gt;</p>
+<p class="p1">&lt;div class="absolute -left-[21px] top-0 size-10 rounded-full bg-white dark:bg-zinc-800 border-2 border-gray-300 dark:border-white/20 flex items-center justify-center shadow-lg"&gt;</p>
+<p class="p1">&lt;span class="text-xs font-bold"&gt;04&lt;/span&gt;</p>
+<p class="p1">&lt;/div&gt;</p>
+<p class="p1">&lt;h3 class="text-lg font-bold text-industrial-blue dark:text-white"&gt;Dispatch&lt;/h3&gt;</p>
+<p class="p1">&lt;p class="text-sm text-misty-taupe dark:text-gray-400 mt-1"&gt;Final QC and shipment.&lt;/p&gt;</p>
+<p class="p1">&lt;/div&gt;</p>
+<p class="p1">&lt;/div&gt;</p>
+<p class="p1">&lt;/div&gt;</p>
+<p class="p1">&lt;/section&gt;</p>
+<p class="p1">&lt;section class="py-24 bg-[#f4f7fa] dark:bg-[#0f1519]"&gt;</p>
+<p class="p1">&lt;div class="mx-auto max-w-[1400px] px-4 lg:px-10"&gt;</p>
+<p class="p1">&lt;div class="grid grid-cols-1 lg:grid-cols-12 gap-12"&gt;</p>
+<p class="p1">&lt;div class="lg:col-span-4 flex flex-col justify-between"&gt;</p>
+<p class="p1">&lt;div&gt;</p>
+<p class="p1">&lt;h2 class="text-3xl md:text-4xl font-bold text-black dark:text-white mb-6 leading-tight"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>Technical &lt;br/&gt;Specifications</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;/h2&gt;</p>
+<p class="p1">&lt;p class="text-slate-600 dark:text-gray-400 mb-8 leading-relaxed"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>Our standard alloy compositions compliant with IS and International standards. We maintain strict control over Fe and Zn levels to ensure superior mechanical properties.</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;/p&gt;</p>
+<p class="p1">&lt;div class="bg-white dark:bg-white/5 p-6 rounded border border-gray-200 dark:border-white/10 shadow-sm"&gt;</p>
+<p class="p1">&lt;h4 class="font-bold text-industrial-blue dark:text-white mb-4 flex items-center gap-2"&gt;</p>
+<p class="p1">&lt;span class="material-symbols-outlined"&gt;verified&lt;/span&gt; Quality Promise</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;/h4&gt;</p>
+<p class="p1">&lt;ul class="space-y-3 text-sm text-gray-600 dark:text-gray-300"&gt;</p>
+<p class="p1">&lt;li class="flex items-center gap-2"&gt;&lt;span class="size-1.5 rounded-full bg-green-500"&gt;&lt;/span&gt;Spectrometer Tested Batches&lt;/li&gt;</p>
+<p class="p1">&lt;li class="flex items-center gap-2"&gt;&lt;span class="size-1.5 rounded-full bg-green-500"&gt;&lt;/span&gt;Vacuum Gas Test Available&lt;/li&gt;</p>
+<p class="p1">&lt;li class="flex items-center gap-2"&gt;&lt;span class="size-1.5 rounded-full bg-green-500"&gt;&lt;/span&gt;UT Testing for Ingots&lt;/li&gt;</p>
+<p class="p1">&lt;/ul&gt;</p>
+<p class="p1">&lt;/div&gt;</p>
+<p class="p1">&lt;/div&gt;</p>
+<p class="p1">&lt;/div&gt;</p>
+<p class="p1">&lt;div class="lg:col-span-8"&gt;</p>
+<p class="p1">&lt;div class="w-full overflow-hidden rounded-lg border border-slate-300 dark:border-white/10 bg-white dark:bg-[#1a190b] shadow-xl"&gt;</p>
+<p class="p1">&lt;div class="overflow-x-auto"&gt;</p>
+<p class="p1">&lt;table class="w-full text-left text-sm"&gt;</p>
+<p class="p1">&lt;thead class="bg-slate-100 dark:bg-white/5 text-industrial-blue dark:text-white border-b border-slate-300 dark:border-white/10"&gt;</p>
+<p class="p1">&lt;tr&gt;</p>
+<p class="p1">&lt;th class="px-6 py-5 font-bold uppercase tracking-wider text-xs font-mono"&gt;Alloy Grade&lt;/th&gt;</p>
+<p class="p1">&lt;th class="px-6 py-5 font-bold uppercase tracking-wider text-xs font-mono"&gt;Si %&lt;/th&gt;</p>
+<p class="p1">&lt;th class="px-6 py-5 font-bold uppercase tracking-wider text-xs font-mono"&gt;Fe % (Max)&lt;/th&gt;</p>
+<p class="p1">&lt;th class="px-6 py-5 font-bold uppercase tracking-wider text-xs font-mono"&gt;Cu %&lt;/th&gt;</p>
+<p class="p1">&lt;th class="px-6 py-5 font-bold uppercase tracking-wider text-xs font-mono"&gt;Tensile (MPa)&lt;/th&gt;</p>
+<p class="p1">&lt;th class="px-6 py-5 font-bold uppercase tracking-wider text-xs text-right font-mono"&gt;Datasheet&lt;/th&gt;</p>
+<p class="p1">&lt;/tr&gt;</p>
+<p class="p1">&lt;/thead&gt;</p>
+<p class="p1">&lt;tbody class="divide-y divide-slate-200 dark:divide-white/5"&gt;</p>
+<p class="p1">&lt;tr class="group hover:bg-blue-50 dark:hover:bg-white/5 transition-colors"&gt;</p>
+<p class="p1">&lt;td class="px-6 py-4 font-bold text-black dark:text-white font-mono"&gt;A356.2&lt;/td&gt;</p>
+<p class="p1">&lt;td class="px-6 py-4 text-slate-600 dark:text-gray-300 font-mono"&gt;6.5 - 7.5&lt;/td&gt;</p>
+<p class="p1">&lt;td class="px-6 py-4 text-slate-600 dark:text-gray-300 font-mono"&gt;0.20&lt;/td&gt;</p>
+<p class="p1">&lt;td class="px-6 py-4 text-slate-600 dark:text-gray-300 font-mono"&gt;0.20&lt;/td&gt;</p>
+<p class="p1">&lt;td class="px-6 py-4 text-slate-600 dark:text-gray-300 font-mono"&gt;230&lt;/td&gt;</p>
+<p class="p1">&lt;td class="px-6 py-4 text-right"&gt;</p>
+<p class="p1">&lt;a class="text-xs font-bold text-orange-600 dark:text-orange-400 hover:text-industrial-blue uppercase" href="#"&gt;[PDF]&lt;/a&gt;</p>
+<p class="p1">&lt;/td&gt;</p>
+<p class="p1">&lt;/tr&gt;</p>
+<p class="p1">&lt;tr class="group hover:bg-blue-50 dark:hover:bg-white/5 transition-colors"&gt;</p>
+<p class="p1">&lt;td class="px-6 py-4 font-bold text-black dark:text-white font-mono"&gt;ADC12&lt;/td&gt;</p>
+<p class="p1">&lt;td class="px-6 py-4 text-slate-600 dark:text-gray-300 font-mono"&gt;9.6 - 12.0&lt;/td&gt;</p>
+<p class="p1">&lt;td class="px-6 py-4 text-slate-600 dark:text-gray-300 font-mono"&gt;1.3&lt;/td&gt;</p>
+<p class="p1">&lt;td class="px-6 py-4 text-slate-600 dark:text-gray-300 font-mono"&gt;1.5 - 3.5&lt;/td&gt;</p>
+<p class="p1">&lt;td class="px-6 py-4 text-slate-600 dark:text-gray-300 font-mono"&gt;310&lt;/td&gt;</p>
+<p class="p1">&lt;td class="px-6 py-4 text-right"&gt;</p>
+<p class="p1">&lt;a class="text-xs font-bold text-orange-600 dark:text-orange-400 hover:text-industrial-blue uppercase" href="#"&gt;[PDF]&lt;/a&gt;</p>
+<p class="p1">&lt;/td&gt;</p>
+<p class="p1">&lt;/tr&gt;</p>
+<p class="p1">&lt;tr class="group hover:bg-blue-50 dark:hover:bg-white/5 transition-colors"&gt;</p>
+<p class="p1">&lt;td class="px-6 py-4 font-bold text-black dark:text-white font-mono"&gt;6061&lt;/td&gt;</p>
+<p class="p1">&lt;td class="px-6 py-4 text-slate-600 dark:text-gray-300 font-mono"&gt;0.4 - 0.8&lt;/td&gt;</p>
+<p class="p1">&lt;td class="px-6 py-4 text-slate-600 dark:text-gray-300 font-mono"&gt;0.7&lt;/td&gt;</p>
+<p class="p1">&lt;td class="px-6 py-4 text-slate-600 dark:text-gray-300 font-mono"&gt;0.15 - 0.4&lt;/td&gt;</p>
+<p class="p1">&lt;td class="px-6 py-4 text-slate-600 dark:text-gray-300 font-mono"&gt;310&lt;/td&gt;</p>
+<p class="p1">&lt;td class="px-6 py-4 text-right"&gt;</p>
+<p class="p1">&lt;a class="text-xs font-bold text-orange-600 dark:text-orange-400 hover:text-industrial-blue uppercase" href="#"&gt;[PDF]&lt;/a&gt;</p>
+<p class="p1">&lt;/td&gt;</p>
+<p class="p1">&lt;/tr&gt;</p>
+<p class="p1">&lt;tr class="group hover:bg-blue-50 dark:hover:bg-white/5 transition-colors"&gt;</p>
+<p class="p1">&lt;td class="px-6 py-4 font-bold text-black dark:text-white font-mono"&gt;LM6&lt;/td&gt;</p>
+<p class="p1">&lt;td class="px-6 py-4 text-slate-600 dark:text-gray-300 font-mono"&gt;10.0 - 13.0&lt;/td&gt;</p>
+<p class="p1">&lt;td class="px-6 py-4 text-slate-600 dark:text-gray-300 font-mono"&gt;0.6&lt;/td&gt;</p>
+<p class="p1">&lt;td class="px-6 py-4 text-slate-600 dark:text-gray-300 font-mono"&gt;0.1&lt;/td&gt;</p>
+<p class="p1">&lt;td class="px-6 py-4 text-slate-600 dark:text-gray-300 font-mono"&gt;280&lt;/td&gt;</p>
+<p class="p1">&lt;td class="px-6 py-4 text-right"&gt;</p>
+<p class="p1">&lt;a class="text-xs font-bold text-orange-600 dark:text-orange-400 hover:text-industrial-blue uppercase" href="#"&gt;[PDF]&lt;/a&gt;</p>
+<p class="p1">&lt;/td&gt;</p>
+<p class="p1">&lt;/tr&gt;</p>
+<p class="p1">&lt;/tbody&gt;</p>
+<p class="p1">&lt;/table&gt;</p>
+<p class="p1">&lt;/div&gt;</p>
+<p class="p1">&lt;div class="border-t border-slate-200 dark:border-white/5 bg-slate-50 dark:bg-white/5 px-6 py-4 flex justify-between items-center"&gt;</p>
+<p class="p1">&lt;span class="text-xs text-slate-500 font-mono"&gt;* Typical values. Contact engineering for precise tolerance data.&lt;/span&gt;</p>
+<p class="p1">&lt;button class="flex items-center gap-2 text-sm font-bold text-black dark:text-white hover:text-orange-600 transition-colors"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                                </span>View Full Catalog &lt;span class="material-symbols-outlined text-lg"&gt;arrow_forward&lt;/span&gt;</p>
+<p class="p1">&lt;/button&gt;</p>
+<p class="p1">&lt;/div&gt;</p>
+<p class="p1">&lt;/div&gt;</p>
+<p class="p1">&lt;/div&gt;</p>
+<p class="p1">&lt;/div&gt;</p>
+<p class="p1">&lt;/div&gt;</p>
+<p class="p1">&lt;/section&gt;</p>
+<p class="p1">&lt;section class="py-24 bg-industrial-blue text-white relative overflow-hidden"&gt;</p>
+<p class="p1">&lt;div class="absolute inset-0 z-0 opacity-10" style="background-image: radial-gradient(circle at center, #ffffff 1px, transparent 1px); background-size: 32px 32px;"&gt;&lt;/div&gt;</p>
+<p class="p1">&lt;div class="absolute top-0 left-0 w-full h-px bg-gradient-to-r from-transparent via-white/30 to-transparent"&gt;&lt;/div&gt;</p>
+<p class="p1">&lt;div class="absolute bottom-0 left-0 w-full h-px bg-gradient-to-r from-transparent via-white/30 to-transparent"&gt;&lt;/div&gt;</p>
+<p class="p1">&lt;div class="relative z-10 mx-auto max-w-[960px] px-4 text-center"&gt;</p>
+<p class="p1">&lt;span class="inline-block px-3 py-1 mb-6 text-xs font-bold tracking-widest uppercase border border-white/20 rounded bg-white/10 backdrop-blur-sm"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>Supply Chain Optimization</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;/span&gt;</p>
+<p class="p1">&lt;h2 class="text-4xl md:text-5xl font-black mb-6 tracking-tight"&gt;Ready to Scale Your Production?&lt;/h2&gt;</p>
+<p class="p1">&lt;p class="text-lg md:text-xl text-blue-100 mb-10 max-w-2xl mx-auto font-light leading-relaxed"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>Partner with Sionex for reliable, sustainable, and high-purity aluminium solutions. Get a custom quote based on current market rates.</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;/p&gt;</p>
+<p class="p1">&lt;div class="flex flex-col sm:flex-row gap-4 justify-center"&gt;</p>
+<p class="p1">&lt;button class="flex h-14 min-w-[200px] cursor-pointer items-center justify-center rounded bg-orange-500 px-8 text-white text-base font-bold uppercase tracking-wide transition-transform hover:scale-105 shadow-xl shadow-black/20 hover:bg-orange-600 border border-orange-400"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>Start Your Quote</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;/button&gt;</p>
+<p class="p1">&lt;button class="flex h-14 min-w-[200px] cursor-pointer items-center justify-center rounded border border-white/30 bg-transparent px-8 text-white text-base font-bold uppercase tracking-wide hover:bg-white hover:text-industrial-blue transition-colors"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>Contact Sales</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;/button&gt;</p>
+<p class="p1">&lt;/div&gt;</p>
+<p class="p1">&lt;/div&gt;</p>
+<p class="p1">&lt;/section&gt;</p>
+<p class="p1">&lt;footer class="bg-[#0b1014] text-white pt-20 pb-8 border-t border-white/10 relative"&gt;</p>
+<p class="p1">&lt;div class="mx-auto max-w-[1400px] px-4 lg:px-10"&gt;</p>
+<p class="p1">&lt;div class="flex flex-wrap justify-center lg:justify-between items-center gap-8 pb-12 border-b border-white/10 mb-12"&gt;</p>
+<p class="p1">&lt;div class="flex items-center gap-3 opacity-60 hover:opacity-100 transition-opacity grayscale hover:grayscale-0"&gt;</p>
+<p class="p1">&lt;span class="material-symbols-outlined text-4xl"&gt;verified_user&lt;/span&gt;</p>
+<p class="p1">&lt;div class="flex flex-col"&gt;</p>
+<p class="p1">&lt;span class="text-sm font-bold"&gt;ISO 9001:2015&lt;/span&gt;</p>
+<p class="p1">&lt;span class="text-xs text-gray-500"&gt;Certified Company&lt;/span&gt;</p>
+<p class="p1">&lt;/div&gt;</p>
+<p class="p1">&lt;/div&gt;</p>
+<p class="p1">&lt;div class="h-8 w-px bg-white/10 hidden lg:block"&gt;&lt;/div&gt;</p>
+<p class="p1">&lt;div class="flex items-center gap-3 opacity-60 hover:opacity-100 transition-opacity grayscale hover:grayscale-0"&gt;</p>
+<p class="p1">&lt;span class="material-symbols-outlined text-4xl"&gt;factory&lt;/span&gt;</p>
+<p class="p1">&lt;div class="flex flex-col"&gt;</p>
+<p class="p1">&lt;span class="text-sm font-bold"&gt;MSME Registered&lt;/span&gt;</p>
+<p class="p1">&lt;span class="text-xs text-gray-500"&gt;Udyam Registration&lt;/span&gt;</p>
+<p class="p1">&lt;/div&gt;</p>
+<p class="p1">&lt;/div&gt;</p>
+<p class="p1">&lt;div class="h-8 w-px bg-white/10 hidden lg:block"&gt;&lt;/div&gt;</p>
+<p class="p1">&lt;div class="flex items-center gap-3 opacity-60 hover:opacity-100 transition-opacity grayscale hover:grayscale-0"&gt;</p>
+<p class="p1">&lt;span class="material-symbols-outlined text-4xl"&gt;handshake&lt;/span&gt;</p>
+<p class="p1">&lt;div class="flex flex-col"&gt;</p>
+<p class="p1">&lt;span class="text-sm font-bold"&gt;Make In India&lt;/span&gt;</p>
+<p class="p1">&lt;span class="text-xs text-gray-500"&gt;Contributing Partner&lt;/span&gt;</p>
+<p class="p1">&lt;/div&gt;</p>
+<p class="p1">&lt;/div&gt;</p>
+<p class="p1">&lt;div class="h-8 w-px bg-white/10 hidden lg:block"&gt;&lt;/div&gt;</p>
+<p class="p1">&lt;div class="flex items-center gap-3 opacity-60 hover:opacity-100 transition-opacity grayscale hover:grayscale-0"&gt;</p>
+<p class="p1">&lt;span class="material-symbols-outlined text-4xl"&gt;recycling&lt;/span&gt;</p>
+<p class="p1">&lt;div class="flex flex-col"&gt;</p>
+<p class="p1">&lt;span class="text-sm font-bold"&gt;Pollution Control&lt;/span&gt;</p>
+<p class="p1">&lt;span class="text-xs text-gray-500"&gt;GPCB Compliant&lt;/span&gt;</p>
+<p class="p1">&lt;/div&gt;</p>
+<p class="p1">&lt;/div&gt;</p>
+<p class="p1">&lt;/div&gt;</p>
+<p class="p1">&lt;div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-12 mb-16"&gt;</p>
+<p class="p1">&lt;div class="lg:col-span-2 flex flex-col gap-6 pr-8"&gt;</p>
+<p class="p1">&lt;div class="flex items-center gap-3"&gt;</p>
+<p class="p1">&lt;div class="flex size-8 items-center justify-center rounded bg-industrial-blue text-white"&gt;</p>
+<p class="p1">&lt;span class="material-symbols-outlined text-xl font-bold"&gt;factory&lt;/span&gt;</p>
+<p class="p1">&lt;/div&gt;</p>
+<p class="p1">&lt;h3 class="text-xl font-bold tracking-tight uppercase"&gt;Sionex Metals&lt;/h3&gt;</p>
+<p class="p1">&lt;/div&gt;</p>
+<p class="p1">&lt;p class="text-gray-400 text-sm leading-relaxed max-w-md"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>Leading the transition to sustainable industrial metals. High-purity recycled aluminium for a greener future. We are committed to closing the loop in the aluminium lifecycle.</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;/p&gt;</p>
+<p class="p1">&lt;div class="flex gap-4 mt-4"&gt;</p>
+<p class="p1">&lt;a class="size-10 rounded bg-white/5 flex items-center justify-center text-gray-400 hover:text-white hover:bg-orange-600 transition-all" href="#"&gt;&lt;span class="material-symbols-outlined text-lg"&gt;public&lt;/span&gt;&lt;/a&gt;</p>
+<p class="p1">&lt;a class="size-10 rounded bg-white/5 flex items-center justify-center text-gray-400 hover:text-white hover:bg-orange-600 transition-all" href="#"&gt;&lt;span class="material-symbols-outlined text-lg"&gt;mail&lt;/span&gt;&lt;/a&gt;</p>
+<p class="p1">&lt;a class="size-10 rounded bg-white/5 flex items-center justify-center text-gray-400 hover:text-white hover:bg-orange-600 transition-all" href="#"&gt;&lt;span class="material-symbols-outlined text-lg"&gt;call&lt;/span&gt;&lt;/a&gt;</p>
+<p class="p1">&lt;/div&gt;</p>
+<p class="p1">&lt;/div&gt;</p>
+<p class="p1">&lt;div&gt;</p>
+<p class="p1">&lt;h4 class="text-sm font-bold mb-6 text-white uppercase tracking-wider border-l-2 border-orange-500 pl-3"&gt;Products&lt;/h4&gt;</p>
+<p class="p1">&lt;ul class="flex flex-col gap-3 text-sm text-gray-400"&gt;</p>
+<p class="p1">&lt;li&gt;&lt;a class="hover:text-orange-400 transition-colors" href="#"&gt;Foundry Alloys&lt;/a&gt;&lt;/li&gt;</p>
+<p class="p1">&lt;li&gt;&lt;a class="hover:text-orange-400 transition-colors" href="#"&gt;Wrought Alloys&lt;/a&gt;&lt;/li&gt;</p>
+<p class="p1">&lt;li&gt;&lt;a class="hover:text-orange-400 transition-colors" href="#"&gt;Master Alloys&lt;/a&gt;&lt;/li&gt;</p>
+<p class="p1">&lt;li&gt;&lt;a class="hover:text-orange-400 transition-colors" href="#"&gt;Deox Products&lt;/a&gt;&lt;/li&gt;</p>
+<p class="p1">&lt;li&gt;&lt;a class="hover:text-orange-400 transition-colors" href="#"&gt;Custom Formulations&lt;/a&gt;&lt;/li&gt;</p>
+<p class="p1">&lt;/ul&gt;</p>
+<p class="p1">&lt;/div&gt;</p>
+<p class="p1">&lt;div&gt;</p>
+<p class="p1">&lt;h4 class="text-sm font-bold mb-6 text-white uppercase tracking-wider border-l-2 border-orange-500 pl-3"&gt;Company&lt;/h4&gt;</p>
+<p class="p1">&lt;ul class="flex flex-col gap-3 text-sm text-gray-400"&gt;</p>
+<p class="p1">&lt;li&gt;&lt;a class="hover:text-orange-400 transition-colors" href="#"&gt;About Us&lt;/a&gt;&lt;/li&gt;</p>
+<p class="p1">&lt;li&gt;&lt;a class="hover:text-orange-400 transition-colors" href="#"&gt;Sustainability Report&lt;/a&gt;&lt;/li&gt;</p>
+<p class="p1">&lt;li&gt;&lt;a class="hover:text-orange-400 transition-colors" href="#"&gt;Certifications&lt;/a&gt;&lt;/li&gt;</p>
+<p class="p1">&lt;li&gt;&lt;a class="hover:text-orange-400 transition-colors" href="#"&gt;Investor Relations&lt;/a&gt;&lt;/li&gt;</p>
+<p class="p1">&lt;li&gt;&lt;a class="hover:text-orange-400 transition-colors" href="#"&gt;Careers&lt;/a&gt;&lt;/li&gt;</p>
+<p class="p1">&lt;li&gt;&lt;a class="hover:text-orange-400 transition-colors" href="#"&gt;Contact&lt;/a&gt;&lt;/li&gt;</p>
+<p class="p1">&lt;/ul&gt;</p>
+<p class="p1">&lt;/div&gt;</p>
+<p class="p1">&lt;div&gt;</p>
+<p class="p1">&lt;h4 class="text-sm font-bold mb-6 text-white uppercase tracking-wider border-l-2 border-orange-500 pl-3"&gt;Headquarters&lt;/h4&gt;</p>
+<p class="p1">&lt;address class="text-sm text-gray-400 not-italic leading-relaxed"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>Plot No. 45-B, GIDC Estate&lt;br/&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>Sector 4, Metal District&lt;br/&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>Dahej, Gujarat 392130&lt;br/&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>India</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;/address&gt;</p>
+<p class="p1">&lt;div class="mt-6 text-sm text-gray-400 space-y-2"&gt;</p>
+<p class="p1">&lt;span class="block hover:text-white transition-colors cursor-pointer"&gt;&lt;span class="text-orange-500 font-bold mr-2"&gt;P:&lt;/span&gt; +91 98 765 43210&lt;/span&gt;</p>
+<p class="p1">&lt;span class="block hover:text-white transition-colors cursor-pointer"&gt;&lt;span class="text-orange-500 font-bold mr-2"&gt;E:&lt;/span&gt; sales@sionexmetals.in&lt;/span&gt;</p>
+<p class="p1">&lt;/div&gt;</p>
+<p class="p1">&lt;/div&gt;</p>
+<p class="p1">&lt;/div&gt;</p>
+<p class="p1">&lt;div class="border-t border-white/10 pt-8 flex flex-col md:flex-row justify-between items-center gap-4"&gt;</p>
+<p class="p1">&lt;p class="text-xs text-gray-500"&gt;© 2024 Sionex Metals &amp;amp; Alloys Pvt Ltd. All rights reserved.&lt;/p&gt;</p>
+<p class="p1">&lt;div class="flex gap-6 text-xs text-gray-500"&gt;</p>
+<p class="p1">&lt;a class="hover:text-white" href="#"&gt;Privacy Policy&lt;/a&gt;</p>
+<p class="p1">&lt;a class="hover:text-white" href="#"&gt;Terms of Service&lt;/a&gt;</p>
+<p class="p1">&lt;a class="hover:text-white" href="#"&gt;Sitemap&lt;/a&gt;</p>
+<p class="p1">&lt;/div&gt;</p>
+<p class="p1">&lt;/div&gt;</p>
+<p class="p1">&lt;/div&gt;</p>
+<p class="p1">&lt;/footer&gt;</p>
+<p class="p1">&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;/body&gt;&lt;/html&gt;</p>
+</body>
+</html>
